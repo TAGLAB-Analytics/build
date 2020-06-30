@@ -25,6 +25,11 @@ a {
     text-decoration: none
 }
 
+table {
+    background-color: #fff;
+    border-radius: 30px;
+}
+
 html,
 body {
     width: 100%;
