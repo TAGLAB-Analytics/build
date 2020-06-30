@@ -1,3 +1,8 @@
+::selection {
+    color: #fff;
+    background: #d00000;
+}
+
 h1 {
     font-size: 42px;
     font-weight: lighter;
@@ -27,7 +32,8 @@ a {
 
 table {
     background-color: #fff;
-    border-radius: 30px;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px #030c44;
 }
 
 html,
@@ -275,10 +281,11 @@ section {
 }
 
 .slider__radio#button-two:checked~.slider__items {
-    margin-top: -480px
+    margin-top: -535px
 }
 
-.slider__radio#button-three:checked~.slider__items {
+<!-- above default value was 480 px,
+was updated to adgust slider 2 position-->.slider__radio#button-three:checked~.slider__items {
     margin-top: -960px
 }
 
