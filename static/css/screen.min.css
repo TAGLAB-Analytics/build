@@ -285,7 +285,8 @@ section {
 }
 
 <!-- above default value was 480 px,
-was updated to adgust slider 2 position-->.slider__radio#button-three:checked~.slider__items {
+was updated to adgust slider 2 position-->
+.slider__radio#button-three:checked~.slider__items {
     margin-top: -960px
 }
 
