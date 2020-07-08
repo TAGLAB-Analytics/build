@@ -30,11 +30,7 @@ a {
     text-decoration: none
 }
 
-table {
-    background-color: #fff;
-    border-radius: 20px;
-    box-shadow: 1px 1px 1px 1px #030c44;
-}
+
 
 html,
 body {
@@ -419,11 +415,11 @@ was updated to adgust slider 2 position-->
     }
     .page-nav__link.is-highlighted {
         padding-bottom: 10px;
-        background-color: #ededed
+        background-color: #000000
     }
     .page-nav__link:not(.is-highlighted):hover {
         padding-bottom: 10px;
-        background-color: #ededed
+        background-color: #000000
     }
     .promo {
         height: 320px;
@@ -474,29 +470,25 @@ was updated to adgust slider 2 position-->
         width: 30px;
         height: 30px
     }
+    
+    
 }
-
 .parent_loop_main
 {
     width: 100%;
     float: center;
     margin-bottom: 20px;
 }
-.loop_element
-{
-    width: 225px;
-    height: auto;
-    float: left;
-    margin-right: 10px;
-}
+
 .t-a-c
 {
     text-align: center;
+    color: black;
 }
 .image_D
 {
-    width: 225px;
-    height: 255px;
+    width: auto;
+    height: auto;
     border-radius: 7px;
     overflow: hidden;
 }
@@ -506,5 +498,25 @@ was updated to adgust slider 2 position-->
     height: 100%;
     object-fit: cover;
 }
-
+.loop_elements
+{
+    color: black;
+    width: 225px;
+    height: auto;
+    float: left;
+    margin-right: 10px;
+}
+.usp-boxes
+{
+    align-items: center;
+    background-color: #fff;
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    box-shadow: 1px 1px 1px 1px #030c44;
+}
+.img_slider
+{
+    width: 500;
+    background-color: #ffffff50;
 }
