@@ -22,7 +22,25 @@
  <!-- Data Layer -->
  <script> 
     dataLayer = [{
-        'page-type': 'product'
+        'page-type': 'product',
+        event: "view_item_list",
+     ecommerce: {
+     items: [
+     {
+         item_id: "SKU_001",
+          item_name: "Momo Regular",
+         currency: "EUR",
+         index: 0,
+         item_brand: "Momo",
+         item_category: "Cajon",
+         item_variant: "big",
+         location_id: "L_1",
+         price: 60.00,
+         weight: "30kg",
+         quantity: 1
+    },
+  ]
+  }
             }];
 </script>
 <!-- Google Tag Manager -->
@@ -69,7 +87,27 @@
     <h1>Momo Regular Product Page</h1>
     <img class="image_D" src="static/images/gallery1.jpg " class="img_asc">
     <p>Descritpion: Roboust wodden, high quality sound, classic Cajon.<br> Weight: 5kg<br> Price: 60€<br> Dimensions: 50x30x30<br> SKU: 1</p>
-    <a  href="#">
+    <a  onclick="      dataLayer.push({
+        event: `add_to_cart`,
+        ecommerce: {
+        items: [
+        {
+            item_id: `SKU_001`,
+             item_name: `Momo Regular`,
+            currency: `EUR`,
+            index: 0,
+            item_brand: `Momo`,
+            item_category: `Cajon`,
+            item_variant: `big`,
+            location_id: `L_1`,
+            price: 60.00,
+            weight: `30kg`,
+            quantity: 1
+       },
+    ,
+    ]
+     }
+    });" href="#">
         Add to cart
     </a><br>
     <a  href="#">
