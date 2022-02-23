@@ -19,45 +19,7 @@
     <link rel="stylesheet" href="static/css/slider.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="dev\slider.js"></script>
-    <script> 
-        dataLayer = [{
-            'page-type': 'checkout',
-            'step': 'typ',
-            event: "purchase",
-     ecommerce: {
-	 currency: "EUR",
-	 value: 125.00,
-	 transaction_id :"invoice_123",
-     items: [
-     {
-         item_id: "SKU_001",
-          item_name: "Momo Regular",
-         currency: "EUR",
-         index: 0,
-         item_brand: "Momo",
-         item_category: "Cajon",
-         item_variant: "big",
-         price: 60.00,
-         weight: "30kg",
-         quantity: 1
-    },
-	 {
-         item_id: "SKU_003",
-          item_name: "Latin Exotic",
-         currency: "EUR",
-         index: 0,
-         item_brand: "Momo",
-         item_category: "Cajon",
-         item_variant: "big",
-         price: 65.00,
-         weight: "30kg",
-         quantity: 1
-    },
-  ]
-  }
-    
-                }];
-    </script>
+   <script>var dataLayer</script>
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -65,6 +27,43 @@
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-KJFF5VP');</script>
     <!-- End Google Tag Manager -->
+    <script> 
+        dataLayer.push = [{
+               'page-type': 'checkout',
+               'step': 'typ',
+               event: "purchase",
+            ecommerce: {
+            currency: "EUR",
+           value: 125.00,
+           transaction_id :"invoice_123",
+           items: [
+           {
+               item_id: "SKU_001",
+               item_name: "Momo Regular",
+               currency: "EUR",
+               index: 0,
+               item_brand: "Momo",
+               item_category: "Cajon",
+               item_variant: "big",
+               price: 60.00,
+               quantity: 1
+           },
+           {
+               item_id: "SKU_003",
+               item_name: "Latin Exotic",
+               currency: "EUR",
+               index: 0,
+               item_brand: "Momo",
+               item_category: "Cajon",
+               item_variant: "big",
+               price: 65.00,
+               quantity: 1
+           },
+       ]
+       }
+       
+                   }];
+       </script>
 </head>
 
 <body>
