@@ -22,9 +22,53 @@
  <!-- Data Layer -->
  <script> 
     dataLayer = [{
-        'page-type': 'listing'
+        page-type: 'listing',
+        event: "view_item_list",
+  ecommerce: {
+  items: [
+  {
+      item_id: "SKU_001",
+       item_name: "Momo Regular",
+      currency: "EUR",
+      index: 0,
+      item_brand: "Momo",
+      item_category: "Cajon",
+      item_variant: "big",
+      location_id: "L_1",
+      price: 60.00,
+      weight: "30kg",
+      quantity: 1
+ },
+ {
+     item_id: "SKU_002",
+       item_name: "Night Raider",
+      currency: "EUR",
+      index: 1,
+      item_brand: "Momo",
+      item_category: "Cajon",
+      item_variant: "medium",
+      location_id: "L_2",
+      price: 30.00,
+      weight: "25kg",
+      quantity: 1
+ },
+ {
+     item_id: "SKU_003",
+       item_name: "Latin Exotic",
+      currency: "EUR",
+      index: 2,
+      item_brand: "Momo",
+      item_category: "Cajon",
+      item_variant: "small",
+      location_id: "L_3",
+      price: 56.00,
+      weight: "30kg",
+      quantity: 1
+ }]
+}
             }];
 </script>
+
     <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -68,8 +112,8 @@
     <!-- All products table -->
     <!-- Product 1-->
     <div style= "clear:both">
-   <h2><a onclick="      dataLayer.push({
-    event: `view_item_list`,
+   <aonclick="      dataLayer.push({
+    event: `select_item`,
     ecommerce: {
     items: [
     {
@@ -88,7 +132,9 @@
 ,
 ]
  }
-});" href="product1.html">Momo Regular</a></h1>
+});" href="product1.html"
+
+><h2 >Momo Regular</h2></a>
 
     <img href="product1.html"class="image_D" src="static/images/gallery1.jpg " class="img_asc">
     <p>Descritpion: Roboust wodden, high quality sound, classic Cajon.<br> Weight: 5kg<br> Price: 60€<br> Dimensions: 50x30x30<br> SKU: 1</p>
@@ -99,65 +145,8 @@
     <img class="image_D" src="static/images/gallery3.jpg " class="img_asc">
 
     <p>Descritpion: Roboust wodden, high quality sound, classic Cajon.<br> Weight: 7kg<br> Price: 65€<br> Dimensions: 52x50x200<br> SKU: 3</p>
-   <script>
-       dataLayer.push({
-     event: "view_item_list",
-     ecommerce: {
-     items: [
-     {
-         item_id: "SKU_001",
-          item_name: "Momo Regular",
-         currency: "EUR",
-         index: 0,
-         item_brand: "Momo",
-         item_category: "Cajon",
-         item_variant: "big",
-         location_id: "L_1",
-         price: 60.00,
-         weight: "30kg",
-         quantity: 1
-    },
-    {
-        item_id: "SKU_002",
-          item_name: "Night Raider",
-         currency: "EUR",
-         index: 1,
-         item_brand: "Momo",
-         item_category: "Cajon",
-         item_variant: "medium",
-         location_id: "L_2",
-         price: 30.00,
-         weight: "25kg",
-         quantity: 1
-    },
-    {
-        item_id: "SKU_003",
-          item_name: "Latin Exotic",
-         currency: "EUR",
-         index: 2,
-         item_brand: "Momo",
-         item_category: "Cajon",
-         item_variant: "small",
-         location_id: "L_3",
-         price: 56.00,
-         weight: "30kg",
-         quantity: 1
-    }]
-  }
-});
-   </script>
-    <!-- Product 1 Slider Images -->
-    <div id="img_slider"> <br>
-        <div id="big_image">
-            <img height="500" width="500" src="static\images\product1\in-action.jpeg" alt="in-action" />
-        </div>
-        <div id="small_image">
-            <img height="100" width="100" src="static\images\product1\in-action.jpeg" alt="in-action" />
-            <img height="100" width="100" src="static\images\product1\front-angle.jpeg" alt="front-angle" />
-            <img height="100" width="100" src="static\images\product1\backhole-inside.jpeg" alt="back-hole" />
-            <img height="100" width="100" src="static\images\product1\front.jpeg" alt="front" />
-        </div>
-    </div>
+
+
     </div>
     <!-- $Page footer-->
 
